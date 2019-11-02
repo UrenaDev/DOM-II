@@ -70,3 +70,15 @@ const destination = document.querySelector('.content-destination');
 destination.addEventListener('click', (event) => {
   event.target.style.display = 'none';
 });
+
+
+// stop propagation (This stops the navbar message from firing when about is clicked)
+const mainNav = document.querySelector('.main-navigation');
+mainNav.addEventListener('click', () => {
+  alert('navbar was clicked!');
+})
+
+links[1].addEventListener('click', (event) => {
+  event.stopPropagation();
+  alert('About was clicked!');
+})
