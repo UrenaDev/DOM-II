@@ -31,3 +31,10 @@ const mainSection = document.querySelector('.home');
 window.addEventListener('scroll', () => {
   mainSection.style.backgroundColor = 'gray';
 })
+
+//5. On any Keydown, change body bg color to pink
+
+const theBody = document.querySelector('body');
+document.addEventListener('keydown', () => {
+  theBody.style.backgroundColor = 'pink';
+})
