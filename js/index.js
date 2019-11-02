@@ -1,5 +1,12 @@
 // Your code goes here
 
+//Prevent Default
+document.querySelectorAll('header nav a').forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+  })
+})
+
 //1. on click make button 1 hot pink
 const Btn1 = document.querySelector('.btn');
 
