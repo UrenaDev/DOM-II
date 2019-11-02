@@ -33,15 +33,17 @@ window.addEventListener('scroll', () => {
 })
 
 //5. On any Keydown, change body bg color to pink
-
 const theBody = document.querySelector('body');
 document.addEventListener('keydown', () => {
   theBody.style.backgroundColor = 'pink';
 })
 
 //6. On load, display a message
-
 window.onload = (event) => {
   alert("The page has loaded.");
 }
 
+//7. On "Copy" display a message
+window.addEventListener("copy", (event) => {
+  alert("DONT COPY MY TEXT!!.");
+})
