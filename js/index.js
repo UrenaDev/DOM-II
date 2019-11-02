@@ -18,9 +18,16 @@ links.forEach(link => {
 })
 
 //3. On Double click, change text on button 2
-
 const Btn2 = document.querySelectorAll('.btn')[1];
 
 Btn2.addEventListener('dblclick', () => {
   Btn2.textContent = 'CHAAAAAANGE!';
+})
+
+
+//4. On Scroll, change main section bg color to gray
+const mainSection = document.querySelector('.home');
+
+window.addEventListener('scroll', () => {
+  mainSection.style.backgroundColor = 'gray';
 })
