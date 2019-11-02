@@ -55,5 +55,18 @@ window.addEventListener("copy", (event) => {
   alert("DONT COPY MY TEXT!!.");
 })
 
-//9. 
+//9. On Mouse Over Footer display message
+const footer = document.querySelector('footer');
 
+footer.addEventListener('mouseover', (event) => {
+  alert("Oh, Hi, Im a Footer");
+
+})
+
+
+//10. On Click have section dissapear
+const destination = document.querySelector('.content-destination');
+
+destination.addEventListener('click', (event) => {
+  event.target.style.display = 'none';
+});
